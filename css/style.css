@@ -18,17 +18,20 @@ body {
   overflow-x: hidden;
 }
 
-img {
+/*
+img.img-responsive {
   max-width: 100%;
   height: auto;
-  border: none;
-}
+  vertical-align: middle;
+}*/
+
 h1 {
   font-size: 36px;
 }
 h2 {
   font-size: 20px;
   font-weight: 700;
+  color: #fff;
 }
 p{
   font-size: 14px;
@@ -36,6 +39,13 @@ p{
   margin: 0;
 }
 a:hover { text-decoration: none; }
+
+ul {
+  margin-left: 5px;
+}
+li {
+  text-align: left;
+}
 
 /* Start Main Menu */
 header {
@@ -86,8 +96,9 @@ z-index: 999;
 }
 .header-content h4 {
   color: #fff;
-  font-size: 25px;
-  text-shadow: 1px 1px #333;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
 }
 .single-page-nav { text-align: center; }
 /* End Header CSS */
@@ -205,8 +216,10 @@ div#service-area-main {
 #testimornial-area{
   margin: 60px 0;
 }
-h2 {
-    color: #666666;
+.testimonial-content h2 {
+  color: black;
+  /*text-transform: uppercase;
+  text-shadow: 2px 2px #000;*/
 }
 .testimonial-content {
   background-color: #f2f2f2;
@@ -341,6 +354,9 @@ input {
 }
 .tm-box-description {
   padding: 30px;
+}
+.tm-box-description h2{
+  color: black;
 }
 .tm-box-p {
   margin-bottom: 10px;
@@ -574,4 +590,12 @@ input {
 
 @media only screen and (max-width: 480px) {
   header { height: 50vh; }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: middle;
 }
